@@ -1,0 +1,103 @@
+@media (max-width: 1024px){
+
+    
+
+    .contratar{
+        padding: 30px 0;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards .card{
+        margin: 0 10% 20px 10%;
+    }
+
+    .cards .card:first-child{
+        margin-left: 10%;
+    }
+
+    .cards .card:last-child{
+        margin-bottom: 50px;
+    }
+
+    .cards-cursos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-cursos .card-cursos{
+        margin-bottom: 20px;
+        min-width: 228px; 
+    }
+
+    .cards-cursos .card-cursos:last-child{
+        margin-bottom: 0;
+    }
+
+    .cards-cursos .card-cursos:nth-child(2){
+        margin-left: 0;
+    }
+
+    .cards-cursos .card-cursos:last-child{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1191px){
+
+    .obj-content{
+        flex-direction: column;
+        
+    }
+
+    .card-obj{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .card-obg p{
+        margin-bottom: 30px;
+        
+    }
+}
+
+@media(max-width: 1325px){
+    .banner{
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .banner-content{
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    .banner-icon{
+        width: 100px;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+@media(max-width: 650px){
+    .mobile{
+        display: block;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .banner-box{
+        padding: 20px;
+    }
+
+    .banner-icon{
+        width: 100px;
+        margin-bottom: 15px;
+    }
+}
