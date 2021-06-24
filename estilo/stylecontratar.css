@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+span, p, h1, h2, h3, div{
+    font-family: "montserrat", sans-serif;
+}
+
+.menu-contratar{
+    background-color: #fffafa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 10%;
+}
+
+.mainmenu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.logo{
+    margin-right: auto;
+    height: 50px;
+}
+
+.mainmenu li{
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.mainmenu li a{
+    color: #bf40bf;
+    font-family: "montserrat", sans-serif;
+    text-decoration: none;
+    position: relative;
+}
+
+.login{
+    margin-left: 10px;
+    padding: 10px 30px;
+    font-family: "montserrat", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    color:#bf40bf;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0);
+    border: solid #bf40bf 2px;
+    transition: 0.6s;
+}
+
+.login:hover{
+    background-color: #bf40bf;
+    color: #fffafa;
+}
+
+.banner-contratar{
+    background: url("./image/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.banner-contratar img{
+    width: 200px;
+}
+
+.gradient{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,158,1) 35%, rgba(129,5,129,1) 100%);
+    box-shadow: inset 20px 400px 200px 100px rgba(2,0,36,1);
+    opacity: 0.9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fffafa;
+}
+
+.login-actived{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 100000;
+}
+
+.cards-contratar{
+    display: flex;
+}
+
+.card-contratar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10000px);
+    background-color: rgb(2,0,36, 0.5);
+    margin-left: 40px;
+
+    padding: 50px;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-contratar:first-child{
+    margin-left: 0;
+}
+
+.card-contratar h3{
+    margin: 20px 0;
+    width: 227px;
+    text-align: center;
+}
+
+.card-contratar span{
+    width: 210px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.openMenu{
+    display: none;
+}
+
+.closeMenu{
+    display: none;
+}
+
+.login-active-button{
+    padding: 10px 20px;
+    font-family: "montserrat", sans-serif;
+    font-size: 15px;
+    border-radius: 40px;
+    border: solid #bf40bf 2px;
+    border-bottom-width: 7px;
+    background: rgb(2,0,36,0);
+    color: white;
+    transition: .6s;
+}
+
+.login-active-button:hover{
+    margin-top: 5px;
+    border-bottom-width: 2px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.main-contratar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50%;
+}
+
+.login-actived{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 100000;
+}
+
+.login-active-button{
+    padding: 10px 20px;
+    font-family: "montserrat", sans-serif;
+    font-size: 15px;
+    border-radius: 40px;
+    border: solid #bf40bf 2px;
+    border-bottom-width: 7px;
+    background: rgb(2,0,36,0);
+    color: white;
+    transition: .6s;
+}
+
+.login-active-button:hover{
+    margin-top: 5px;
+    border-bottom-width: 2px;
+}
+
+@media (max-width: 1024px){
+    .cards-contratar{
+        flex-direction: column;
+    }
+
+    .card-contratar{
+        flex-direction: row;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .card-contratar:last-child{
+        margin-bottom: 0;
+    }
+
+    .cards-contratar img{
+        width: 100px;
+    }
+
+    .mainmenu{
+        display: none;
+    }
+
+    .openMenu{
+        display: block;
+    }
+
+    .closeMenu{
+        display: block;
+    }
+}
+
+@media (max-width: 600px){
+    .card-contratar{
+        padding: 30px;
+    }
+
+    .cards-contratar img{
+        width: 60px;
+    }
+}
+
+@media (max-width: 450px){
+    .card-contratar{
+        padding: 10px;
+    }
+}
