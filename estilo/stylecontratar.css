@@ -11,6 +11,19 @@ span, p, h1, h2, h3, div{
 }
 
 .menu-contratar{
+    background-color: #fffafa;@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+span, p, h1, h2, h3, div{
+    font-family: "montserrat", sans-serif;
+}
+
+.menu-contratar{
     background-color: #fffafa;
     display: flex;
     align-items: center;
@@ -27,6 +40,9 @@ span, p, h1, h2, h3, div{
 
 .logo{
     margin-right: auto;
+}
+
+.logo img{
     height: 50px;
 }
 
@@ -246,5 +262,14 @@ h1{
 @media (max-width: 450px){
     .card-contratar{
         padding: 10px;
+        
+    }
+
+    .card-contratar:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .card-contratar h3{
+        margin: 10px 0;
     }
 }
