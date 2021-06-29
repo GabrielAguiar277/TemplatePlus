@@ -1,4 +1,4 @@
-@media (max-width: 1024px){
+@media (max-width: 1340px){
 
     
 
@@ -6,20 +6,17 @@
         padding: 30px 0;
     }
 
-    .cards{
+    .cards-contratar{
         flex-direction: column;
     }
 
-    .cards .card{
-        margin: 0 10% 20px 10%;
+    .cards-contratar .card-contratar{
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 
-    .cards .card:first-child{
-        margin-left: 10%;
-    }
-
-    .cards .card:last-child{
-        margin-bottom: 50px;
+    .cards-contratar .card-contratar:last-child{
+        margin-bottom: 0;
     }
 
     .cards-cursos{
@@ -30,7 +27,7 @@
 
     .cards-cursos .card-cursos{
         margin-bottom: 20px;
-        min-width: 228px; 
+        margin-right: 0;
     }
 
     .cards-cursos .card-cursos:last-child{
@@ -42,7 +39,46 @@
     }
 
     .cards-cursos .card-cursos:last-child{
-        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .defocus{
+        -webkit-filter: blur(0px);
+    }
+
+
+    /* RODAPÉ */
+
+    .copyright-line{
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright-line img{
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer ul li{
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px){
+    .card-contratar p{
+        padding: 5px;
+        width: 220px;
+    }
+
+    .card-cursos p{
+        padding: 5px;
+        width: 220px;
     }
 }
 
