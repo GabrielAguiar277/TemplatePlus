@@ -26,6 +26,9 @@ span, p, h1, h2, h3, div{
 
 .logo{
     margin-right: auto;
+}
+
+.logo img{
     height: 50px;
 }
 
@@ -99,8 +102,12 @@ span, p, h1, h2, h3, div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
     backdrop-filter: blur(10000px);
-    background-color: rgb(2,0,36, 0.5);
     margin-left: 40px;
 
     padding: 50px;
@@ -210,4 +217,26 @@ h1{
     .card-cursos{
         padding: 10px;
     }
+
+    .card-cursos:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .card-cursos h3{
+        margin: 10px 0;
+        font-size: 0.8em;
+    }
+
+    .card-cursos span{
+        font-size: 0.8em;
+    }
+
+    .card-cursos img{
+        width: 50px;
+    }
+
+    .card-cursos button{
+        font-size: 0.8em;
+    }
 }
+
