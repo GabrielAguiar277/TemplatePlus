@@ -8,11 +8,6 @@ html{
     box-sizing: border-box;
     padding: 0;
     margin:0;
-
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 ::-webkit-scrollbar{
@@ -31,6 +26,10 @@ ul, li, a, h1, h2, h3{
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     list-style: none;
+}
+
+body{
+    background-color: #fffafa;
 }
 
 .mainmenu{
@@ -158,6 +157,7 @@ header .logo{
 
 .objetivo{
     padding: 40px 10%;
+    background-color: #fffafa;
 }
 
 .objetivo h1{
@@ -243,218 +243,145 @@ header .logo{
     border-top-left-radius: 10px;
 }
 
+
+/* CARDS */
+
+.card-img{
+    height: 64px;
+    width: 64px;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+/* cards contratar */
 .contratar{
-    background-color: #bf40bf;
     font-family: "Montserrat", sans-serif;
     color:#fffafa;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 10% 0px 10%;
-
-    display: flex;
     flex-direction: column;
 }
 
 .contratar h1{
     margin: 50px 0;
 }
- 
- 
 
-
-.cards{
-    display: flex;
+.contratar h2{
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-.cards .card{
+.cards-contratar{
+    display: flex;
+    text-align: center;
+}
+
+.card-contratar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    border: solid #fffafa 3px;
-    border-radius: 5px;
-    padding: 1rem 1.5rem;
-    max-height: 706px;
-    max-width: 405px;
-    min-width: 280px;
-
-
-    margin-left: 32px;
-
-    transition: 0.3s;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.cards .card:first-child{
-    margin-left: 0;
+.card-contratar:not(:last-child){
+    margin-right: 20px;
 }
 
-.cards .card span{
-    padding: 20px 0;
+.card-contratar p {
+    width: 300px;
+    padding: 20px;
 }
 
-
-.cards .card img{
-    margin: 10px 0;
-    margin-top: 70px;
-    margin-bottom: 80px;
+.card-contratar h3{
+    margin: 20px 0;
 }
 
-.cards .card button{
-    padding: 0.5rem 1rem;
-    border-radius: 32px;
-    font-family: "Monteserrat", sans-serif;
-    
-
-
+.card-contratar button{
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    border: none;
 }
 
 
-.button_con{
-    cursor: pointer;
-    border-style: solid;
-    border-width: 2px;
-    
-    transition: 0.6s;
-
-}
 
 
-.web_button{
-    border-color: rgb(58, 58, 175);
-    border-bottom-width: 6px;
-    background-color: rgb(255, 250, 250, 0);
-    font-family: "Monteserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #fffafa;
-}
-.app{
-    border-color: rgb(255, 255, 100);
-
-    border-bottom-width: 6px;
-    background-color: rgb(255, 250, 250, 0);
-    font-family: "Monteserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #fffafa;
-}
-
-.data_button{
-    border-color: rgb(49, 240, 176);
-    border-bottom-width: 6px;
-    background-color: rgb(255, 250, 250, 0);
-    font-family: "Monteserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #fffafa;
-}
-
-.web_button:hover{
-    margin-top: 4px;
-    border-bottom-width: 2px;
-}
-
-.app:hover{
-    margin-top: 4px;
-    border-bottom-width: 2px;
-}
-
-.data_button:hover{
-    margin-top: 4px;
-    border-bottom-width: 2px;
-}
+/* cards cursos */
 
 .cursos{
-    padding: 0 10%; 
-    margin-bottom: 20px;
-
-    font-family: "Monteserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    color: #fffafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
 }
 
 .cursos h1{
-    text-align: center;
-    margin: 40px 0;
-    color:#bf40bf;
+    margin: 50px 0;
 }
 
 .cursos h2{
-    font-family: "Montserrat", sans-serif;
-    color: #bf40bf;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 .cards-cursos{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-
-    color: #bf40bf;
+    text-align: center;
 }
 
-.cards-cursos .card-cursos{
+.card-cursos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 1rem 1.5rem;
-    max-height: 706px;
-    max-width: 405px;
-    min-width: 280px;
-
-
-    margin-left: 32px;
-
-    transition: 0.3s;
-    border: solid #bf40bf 3px;
-    border-radius: 5px;
-}
-
-.cards-cursos .card-cursos:first-child{
-    margin-left: 0;
-}
-
-.cards-cursos .card-cursos img{
-    margin: 70px 0;
-}
-
-.cards-cursos .card-cursos span{
+    justify-content: center;
     padding: 20px;
-    text-align: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
 
-.button-cur{
-    padding: 0.5rem 1rem;
-    border-radius: 32px;
-
-    cursor: pointer;
-    border-style: solid;
-    border-width: 2px;
-
-    background-color: rgb(255, 250, 250, 0);
-    font-family: "Monteserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #bf40bf;
-
-    border-color: #bf40bf;
-    border-bottom-width: 6px;
-    
-    transition: 0.6s;
+.card-cursos:not(:last-child){
+    margin-right: 20px;
 }
 
-.button-cur:hover{
-    margin-top: 4px;
-    border-bottom-width: 2px;
+
+.card-cursos p {
+    width: 300px;
+    padding: 20px;
 }
 
-.sobre{
+.card-cursos h3{
+    margin: 20px 0;
+}
+
+.card-cursos button{
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    border: none;
+}
+
+/* FIM CARDS */
+
+/* .sobre{
     background-color: #bf40bf;
-}
+} */
 
 .sobre h1{
     padding: 40px 0;
@@ -478,4 +405,125 @@ header .logo{
 
 .redirect{
     height: 69px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.transition{
+    height: 100px;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,158,1) 35%, rgba(129,5,129,1) 100%);
+    transform: translateY(50px);
+}
+
+.conteudo-main{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,158,1) 35%, rgba(129,5,129,1) 100%);
+}
+
+
+
+
+footer{
+    padding: 50px 10%;
+    background-color: #fffafa;
+}
+
+.copyright-line{
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 30px;
+    border-bottom: solid rgb(231, 231, 231) 1px;
+}
+
+footer img{
+    height: 180px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer h3{
+    margin-bottom: 20px;
+}
+
+.footer ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer ul li a{
+    color: #bf40bf;
+}
+
+.footer ul li span{
+    font-weight: bold;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+}
+
+footer form label{
+    font-family: "montserrat", sans-serif;
+}
+
+footer form input{
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: none;
+    background: rgb(231, 231, 231);
+    border-radius: 50px;
+}
+
+footer form textarea{
+    border: none;
+    background: rgb(231, 231, 231);
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+footer form button{
+    padding: 5px 0;
+    background: rgb(231, 231, 231);
+    border: none;
+    border-radius: 20px;
+
+    font-family: "montserrat", sans-serif;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.6s;
+}
+
+footer form button:hover{
+    background: #bf40bf;
+}
+
+.copyright p{
+    
+    margin-top: 10px;
+
+    font-family: "montserrat", sans-serif;
+    font-size: 10px;
+    color: rgb(180, 180, 180);
 }
